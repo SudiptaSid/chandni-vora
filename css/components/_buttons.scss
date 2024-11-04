@@ -1,0 +1,30 @@
+/* ---------- Buttons ---------- */
+.btn {
+    font-family:$second_font;
+    padding:10px 30px;
+    outline:none;
+    box-shadow:none;
+    background-color:$clr_no;
+    color:$clr_1;
+    border:1px solid $clr_1;
+    border-radius:50px;
+    font-weight:600;
+    text-align: center;
+    &:hover, &:focus, &:active {
+        outline:none;
+        box-shadow:none;
+        background-color:$clr_1;
+        color:$clr_2;
+        border-color:$clr_1;
+    }
+    .btn_clr1_border {
+        background-color:$clr_no;
+        color:$clr_1;
+        border-color:$clr_1;
+        &:hover, &:focus, &:active {
+            background-color:$clr_1;
+            color:$clr_2;
+            border-color:$clr_1;
+        }
+    }
+}

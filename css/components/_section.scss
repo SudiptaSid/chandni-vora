@@ -1,0 +1,416 @@
+/* ---------- Nav-Banner Section ---------- */
+#nav_banner {
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ---------- Banner Section ---------- */
+#cs_hero_banner {
+    padding:10vh 0;
+    position: relative;
+    @media (max-width: $break_768) {
+        padding:5vh 0;
+    }
+    .container {
+        height:100%;
+    }
+    .content {
+        max-width:1000px;
+        margin:auto;
+        height:100%;
+    }
+    .row {
+        height:100%;
+        align-content: center;
+    }
+    h2 {
+        color:$clr_white;
+        margin:0px auto 30px auto;
+        text-align: left;
+    }
+    .btn_clr1_border {
+        min-width:200px;
+    }
+    .cs_arrow {
+        margin-top:30px;
+        i {
+            font-size:3em;
+            color:$clr_1;
+        }
+    }
+}
+#cs_hero_banner2 {
+    height: 80vh;
+    position: relative;
+    @media (max-width: $break_768) {
+        height:50vh;
+    }
+    .boxs {
+        background: linear-gradient(rgba(248, 251, 254, 0.5) 0%, rgba(239, 246, 252, 0.5) 100%);
+        max-width: 600px;
+        text-align: center;
+        padding: 50px;
+        padding-left: 100px;
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        border-radius: 10px;
+        @media (max-width: $break_768) {
+            padding:30px;
+            padding-left:30px;
+        }
+    }
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 1em;
+    }
+    p {
+        margin-bottom:0;
+        font-weight:600;
+    }
+}
+
+/* ---------- Project Section ---------- */
+#cs_project {
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    .grid {
+        a {
+            @include project_grid;
+        }
+    }
+    &.inner_project1 {
+        h3 {
+            font-weight:700;
+        }
+        .grid {
+            a {
+                .details_sec {
+                    color:$clr_black;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Get In Touch Section ---------- */
+#cs_get_touch {
+    color:$clr_white;
+    background-color:#A1A2B5;
+    h4 {
+        margin-bottom:20px;
+        font-weight:700;
+    }
+    a {
+        font-weight:500;
+        color:$clr_white;
+        position: relative;
+        padding-bottom:10px;
+        display: inline-block;
+        &:after {
+            content:'';
+            position: absolute;
+            bottom:0;
+            left:0;
+            background-color:$clr_1;
+            width:100%;
+            height:5px;
+        }
+        &:hover {
+            &:after {
+                background-color:$clr_3;
+            }
+        }
+    }
+}
+
+/* ---------- Right Text Section ---------- */
+#right_txt {
+    h5 {
+        font-weight:700;
+        margin-bottom:0;
+    }
+}
+
+/* ---------- Stakeholder Interview Section ---------- */
+#stakeholder_interview {
+    background-color:$clr_3;
+    color:$clr_white;
+    h3, h4 {
+        font-weight:700;
+    }
+    h3 {
+        color:$clr_black;
+        margin-bottom:50px;
+        @media (max-width: $break_768) {
+            margin-bottom:30px;
+        }
+    }
+    h4 {
+        margin-bottom:30px;
+        margin-top:50px;
+        @media (max-width: $break_768) {
+            margin-top:30px;
+        }
+    }
+    span {
+        color:$clr_black;
+    }
+}
+
+/* ---------- Surveys & Interviews Section ---------- */
+#surveys_interviews {
+    color:$clr_white;
+    h3 {
+        font-weight:700;
+        margin-bottom:50px;
+        @media (max-width: $break_768) {
+            margin-bottom:30px;
+        }
+        span {
+            color:$clr_3;
+        }
+    }
+}
+
+/* ---------- Research & Analysis Section ---------- */
+#research_analysis {
+    h3 {
+        font-weight:700;
+        margin-bottom:50px;
+        @media (max-width: $break_768) {
+            margin-bottom:30px;
+        }
+        span {
+            color:$clr_3;
+        }
+    }
+    .table-responsive {
+        margin-top:40px;
+        .table {
+            background-color:#F8DFDC;
+            font-size:0.875em;
+            td, th {
+                border-top:none;
+                border-bottom:none;
+                min-width:120px;
+                padding:20px 10px;
+                &:first-child {
+                    text-align: right;
+                }
+                img {
+                    height:20px;
+                    width:auto;
+                }
+            }
+            td {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ---------- Persons Section ---------- */
+#cs_person {
+    background-color:$clr_3;
+    overflow-x: hidden;
+    h3 {
+        font-weight:700;
+        span {
+            color:$clr_white
+        }
+    }
+    .boxi {
+        .grid_left {
+            .details {
+                position: absolute;
+                width:calc(100% - 30px);
+                padding:30px 50px;
+                bottom:50px;
+                left:15px;
+                background-color:rgba($clr_white, 0.7);
+                @media (max-width: $break_1240) {
+                    padding:20px;
+                }
+                h4 {
+                    margin-bottom:5px;
+                    font-weight:600;
+                    font-family: serif;
+                }
+                p {
+                    margin-bottom:5px;
+                    i {
+                        margin-right:5px;
+                    }
+                }
+            }
+        }
+        .grid_right {
+            padding:30px;
+            background-color:#E6E6E6;
+            font-size:0.875em;
+            margin-left:-15px;
+            @media (max-width: $break_768) {
+                padding:20px;
+                margin-left:15px;
+                margin-right:15px;
+            }
+            &:after {
+                content:'';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color:#E6E6E6;
+                top: 0;
+                left:auto;
+                right:-100%;
+                @media (max-width: $break_768) {
+                    display: none;
+                }
+            }
+            .texts {
+                margin-bottom:30px;
+                &:last-child {
+                    margin-bottom:0;
+                }
+            }
+        }
+        &.boxi2 {
+            .row {
+                flex-direction: row-reverse;
+            }
+            .grid_right {
+                margin-right:-15px;
+                margin-left:0;
+                @media (max-width: $break_768) {
+                    margin-left:15px;
+                    margin-right:15px;
+                }
+                &:after {
+                    left: -100%;
+                    right:auto;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Experience map Section ---------- */
+#experience_map {
+    h3 {
+        font-weight:700;
+        span {
+            color:$clr_3;
+        }
+    }
+    img {
+        margin-top:50px;
+    }
+}
+
+/* ---------- Problem statement Section ---------- */
+#problem_statement {
+    background-color:$clr_3;
+    color:$clr_white;
+    h3 {
+        font-weight:700;
+    }
+}
+
+/* ---------- Identifying an influencer Section ---------- */
+#identifying_influencer {
+    background: linear-gradient(rgb(252, 237, 235) 0%, rgb(247, 215, 210) 100%);
+    h3 {
+        font-weight:700;
+        margin-bottom:50px;
+        @media (max-width: $break_768) {
+            margin-bottom:30px;
+        }
+        span {
+            color:$clr_3;
+        }
+    }
+    h5 {
+        margin:30px 0px;
+        font-weight:600;
+    }
+}
+
+/* ---------- Identifying an influencer 2 Section ---------- */
+#identifying_influencer2 {
+    background-color:#E0E0E0;
+    h5 {
+        margin-bottom:30px;
+        font-weight:600;
+    }
+}
+
+/* ---------- Identifying an influencer 3 Section ---------- */
+#identifying_influencer3 {
+    background: linear-gradient(rgb(252, 237, 235) 0%, rgb(247, 215, 210) 100%);
+    h5 {
+        margin-bottom:30px;
+        font-weight:600;
+    }
+}
+
+/* ---------- Prototyping Section ---------- */
+#cs_prototyping {
+    h3 {
+        font-weight:700;
+    }
+}
+
+/* ---------- Wireframes Section ---------- */
+#cs_wireframes {
+    background-color: #DBDBDB;
+    h3 {
+        font-weight:700;
+    }
+    img {
+        margin-bottom:30px;
+        width:calc(100% - 30px);
+    }
+    span.span_no {
+        float: left;
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+
+/* ---------- User testing Section ---------- */
+#cs_testing {
+    h3 {
+        font-weight:700;
+        span {
+            color:$clr_3;
+        }
+    }
+    img {
+        margin-bottom:30px;
+        width:calc(100% - 30px);
+    }
+    span.span_no {
+        float: left;
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+
+/* ---------- Mock Up Section ---------- */
+#cs_mockup {
+    background: linear-gradient(rgb(252, 237, 235) 0%, rgb(247, 215, 210) 100%);
+    h3 {
+        font-weight:700;
+        span {
+            color:$clr_3;
+        }
+    }
+    img {
+        max-width:700px;
+    }
+}

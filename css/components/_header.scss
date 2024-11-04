@@ -1,0 +1,81 @@
+/* ---------- Header ---------- */
+#cs_nav {
+    padding:30px 0px;
+    position: relative;
+    z-index:99;
+    @media (max-width: $break_1080) {
+        padding:15px 0px;
+    }
+    .logo_main {
+        float: left;
+        a {
+            font-size:2em;
+            line-height:1;
+            font-weight: 600;
+            font-family:$second_font;
+            @media (max-width: $break_1080) {
+                font-size:1.8em;
+                line-height:1.5;
+            }
+        }
+    }
+    .menu_toggle {
+        float:right;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        span {
+            display: block;
+            height: 3px;
+            margin: 5px 0px;
+            position: relative;
+        }
+        &.cs_close {
+            span:nth-child(1) {
+                transform: rotate(45deg);
+                top: 8px;
+            }
+            span:nth-child(2) {
+                display: none;
+            }
+            span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+#cs_menu {
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: 600ms;
+    top: -100%;
+    left: 0;
+    font-family:$second_font;
+    &.show {
+        top:0;
+    }
+    ul {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 20vh;
+        li {
+            margin-bottom: 30px;
+            a {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.5em;
+                display: inline-block;
+                color: $clr_1;
+                &:hover, &.active {
+                    color:$clr_white;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Heading ---------- */

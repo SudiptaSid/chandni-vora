@@ -1,0 +1,23 @@
+// Project Grid
+@mixin project_grid {
+    position: relative;
+    img {
+        border-radius:10px;
+    }
+    .details_sec {
+        padding:20px 40px;
+        color:$clr_white;
+        text-transform: uppercase;
+        @media (max-width: $break_1080) {
+            padding:20px;
+        }
+        h5 {
+            font-weight:700;
+            margin-bottom:5px;
+        }
+        p {
+            font-size:0.875em;
+            margin-bottom:0;
+        }
+    }
+}
